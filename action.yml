@@ -1,0 +1,46 @@
+# action.yml
+name: 'Badge Action'
+author: 'emibcn'
+description: 'Create a SVG badge using GitHub Actions and GitHub Workflow CPU time (no 3rd parties servers)'
+branding:
+  icon: award
+  color: blue
+inputs:
+  label:
+    description: 'The left label of the badge, usually static.'
+    required: true
+  label-color:
+    description: 'Hex or named color for the label'
+    required: true
+    default: '555'
+  status:
+    description: 'The right status as the badge, usually based on results.'
+    required: true
+  color:
+    description: 'An array (comma separated) with hex or named colors of the badge value background. More than one creates gradient background.'
+    required: true
+    default: 'blue'
+  style:
+    description: 'Badge style: flat or classic'
+    required: true
+    default: 'classic'
+  icon:
+    description: 'Use icon'
+    required: false
+  icon-width:
+    description: 'Set this if icon is not square'
+    required: false
+    default: 13
+  scale:
+    description: 'Set badge scale'
+    required: true
+    default: 1
+  path:
+    description: 'The file path to store the badge image file. Only output to `badge` action output if undefined.'
+    required: false
+outputs:
+  badge:
+    description: 'The badge SVG contents'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
