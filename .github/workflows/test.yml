@@ -27,3 +27,5 @@ jobs:
       with:
         name: badge
         path: badge.svg
+        if-no-files-found: error
+

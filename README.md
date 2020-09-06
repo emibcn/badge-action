@@ -1,3 +1,5 @@
+![.github/workflows/test.yml](https://github.com/emibcn/badge-action/workflows/.github/workflows/test.yml/badge.svg)
+
 # Badge action
 
 This action generates a SVG badge using GitHub Actions and GitHub Workflow CPU time (no 3rd parties servers). The badge is generated using the NPM package [gradient-badge](https://github.com/bokub/gradient-badge).
@@ -49,7 +51,7 @@ The badge SVG contents.
 ## Example usage
 
 ```
-uses: emibcn/clover-coverage-badges-action@v1
+uses: emibcn/badge-action@v1
 with:
   label: 'Test coverage'
   status: '53.4%'
