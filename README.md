@@ -48,9 +48,11 @@ The badge SVG contents.
 
 ## Example usage
 
+```
 uses: emibcn/clover-coverage-badges-action@v1
 with:
   label: 'Test coverage'
   status: '53.4%'
   color: 'blue,555,daf'
   path: '.github/badges/coverage.svg'
+```
