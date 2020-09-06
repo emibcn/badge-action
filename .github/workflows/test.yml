@@ -1,0 +1,29 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: A job to test this action
+    steps:
+
+    - name: Generate a coverage value
+      id: coverage
+      # Generates a GitHub Workflow output named `lines`
+      run: echo "##[set-output name=lines;]${COVERAGE}"
+      env:
+        COVERAGE: 53.5%
+
+    # Use the output from the `coverage` step
+    - name: Generate the badge SVG image
+      uses: emibcn/badge-action@v1
+      with:
+        label: 'Test coverage'
+        status: ${{ steps.coverage.outputs.lines }}
+        color: 'blue,555,daf'
+        path: badge.svg
+
+    - name: Upload badge as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: badge
+        path: badge.svg
