@@ -59,3 +59,11 @@ with:
   color: 'blue,555,daf'
   path: '.github/badges/coverage.svg'
 ```
+
+### Commit the changes to dedicated branch
+
+See a [workflow example](https://github.com/emibcn/badge-action/blob/850d7863d3685b1c4b7033535f1b3a75d0f25534/.github/workflows/test.yml).
+
+### Commit the changes to same branch
+
+See a [workflow example](https://github.com/emibcn/badge-action/blob/88b8f35d4c9fbd776e921f3eea831d4fdb8d4387/.github/workflows/test.yml).
