@@ -62,20 +62,26 @@ with:
 
 ### Commit the changes to dedicated branch
 
-Create the dedicated branch `badges` with:
+Create the dedicated branch `badges` with (extracted from [StackOverflow](https://stackoverflow.com/a/11487993/2928168)):
 
 ```
 git checkout master
-git checkout --orphan foo
+git checkout --orphan badges
 
 # Unstage all the files in your working tree.
 git rm --cached $(git ls-files)
+
+# Create a dedicated README file, so it's clear what's going on here
+echo '# Badges branch' > README.md
+git add README.md
+git commit -m 'Add dedicated README'
+git push origin badges
 ```
 
-Extracted from [StackOverflow](https://stackoverflow.com/a/11487993/2928168).
-
-See a [workflow example](https://github.com/emibcn/badge-action/blob/850d7863d3685b1c4b7033535f1b3a75d0f25534/.github/workflows/test.yml).
+And then, [follow the example](https://github.com/emibcn/badge-action/blob/6af286f6b6e5dcabe6fd7085e852e5e6ac7713a0/.github/workflows/test.yml).
 
 ### Commit the changes to same branch
 
 See a [workflow example](https://github.com/emibcn/badge-action/blob/88b8f35d4c9fbd776e921f3eea831d4fdb8d4387/.github/workflows/test.yml).
+
+Note: You will need to pull auto-generated commits with this technique, or your repo will miss up.
