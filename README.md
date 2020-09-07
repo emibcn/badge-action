@@ -1,4 +1,5 @@
 ![.github/workflows/test.yml](https://github.com/emibcn/badge-action/workflows/.github/workflows/test.yml/badge.svg)
+![.github/workflows/test.yml](https://raw.githubusercontent.com/emibcn/badge-action/master/.github/badges/test-badge.svg)
 
 # Badge action
 
