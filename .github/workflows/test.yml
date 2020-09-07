@@ -58,6 +58,7 @@ jobs:
         if-no-files-found: error
 
     - name: Commit badge
+      continue-on-error: true
       env:
         BADGE: ${{ steps.coverage.outputs.path }}
       run: |
@@ -67,6 +68,7 @@ jobs:
         git commit -m "Add/Update badge"
     - name: Push badge commit
       uses: ad-m/github-push-action@master
+      if: ${{ success() }}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ steps.coverage.outputs.branch }}
