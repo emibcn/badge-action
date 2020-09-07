@@ -62,6 +62,18 @@ with:
 
 ### Commit the changes to dedicated branch
 
+Create the dedicated branch `badges` with:
+
+```
+git checkout master
+git checkout --orphan foo
+
+# Unstage all the files in your working tree.
+git rm --cached $(git ls-files)
+```
+
+Extracted from [StackOverflow](https://stackoverflow.com/a/11487993/2928168).
+
 See a [workflow example](https://github.com/emibcn/badge-action/blob/850d7863d3685b1c4b7033535f1b3a75d0f25534/.github/workflows/test.yml).
 
 ### Commit the changes to same branch
