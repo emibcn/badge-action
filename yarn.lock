@@ -17,9 +17,9 @@ badgen@^3.2.1:
   resolved "https://registry.yarnpkg.com/badgen/-/badgen-3.2.1.tgz#71d09113a091796e74540d0ca8ebc45f89e0f55a"
   integrity sha512-XibyDQHM/7l809dJBp1GEvPmHY3BLgO164f6DuHyLP0OTHDm9EAmHjN7hEyiGQATEpn4G3EVGH8x+M4UFfhkHw==
 
-gradient-badge@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/gradient-badge/-/gradient-badge-1.3.0.tgz#ec481fe6c0f315333128065c3d4834f9888f64cd"
-  integrity sha512-7xkyviql+50//za77UBaq5BdmtyBtjsd3Q+ACx0iByQVmFe1AX6bUZiK3olqWUo95UCIlkDrQYI0VCci4wXp8w==
+gradient-badge@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/gradient-badge/-/gradient-badge-1.3.1.tgz#2564adea865ea6afbfbbcc315b7348eae666d160"
+  integrity sha512-OvTFHZJSQ+fR7zWl6xz5PvniAfKRsHBy98NZ+kAWOnfmP27lt8wMA4oUvsQp0ppNET+2qE0oEnna2s3SiiqaVA==
   dependencies:
     badgen "^3.2.1"
