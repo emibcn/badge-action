@@ -14,9 +14,11 @@ jobs:
         echo "##[set-output name=lines;]${COVERAGE}"
 
         # Create the directory where badges will be saved, if needed
-        mkdir -p .github/badges/
+        mkdir -p "${BADGE_PATH%/*}"
+        echo "##[set-output name=path;]${BADGE_PATH}"
       env:
         COVERAGE: 53.5%
+        BADGE_PATH: .github/badges/test-badge.svg
 
     # Use the output from the `coverage` step
     - name: Generate the badge SVG image
@@ -26,13 +28,13 @@ jobs:
         label: 'Test coverage'
         status: ${{ steps.coverage.outputs.lines }}
         color: 'blue,555,daf'
-        path: .github/badges/test-badge.svg
+        path: ${{ steps.coverage.outputs.path }}
 
     - name: Upload badge as artifact
       uses: actions/upload-artifact@v2
       with:
         name: badge
-        path: ${{ steps.badge.inputs.path }}
+        path: ${{ steps.coverage.outputs.path }}
         if-no-files-found: error
 
     - name: Extract branch name
@@ -41,7 +43,7 @@ jobs:
       id: extract_branch
     - name: Commit badge
       env:
-        BADGE: ${{ steps.badge.inputs.path }}
+        BADGE: ${{ steps.coverage.outputs.path }}
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
