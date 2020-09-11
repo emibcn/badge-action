@@ -84,4 +84,4 @@ And then, [follow the example](https://github.com/emibcn/badge-action/blob/6af28
 
 See a [workflow example](https://github.com/emibcn/badge-action/blob/88b8f35d4c9fbd776e921f3eea831d4fdb8d4387/.github/workflows/test.yml).
 
-Note: You will need to pull auto-generated commits with this technique, or your repo will miss up.
+Note: You will need to pull auto-generated commits with this technique, or your repo will mess up.
