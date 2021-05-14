@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+
+  badge:
+    container_name: badge
+    build: .
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/home/node/app
+    expose:
+      - "3000"
+    ports:
+      - "127.0.0.1:3000:3000"
+    command: "bash"
+    stdin_open: true
+    tty: true
