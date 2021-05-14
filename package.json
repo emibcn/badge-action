@@ -8,7 +8,8 @@
   "license": "GPL-3.0-or-later",
   "private": false,
   "scripts": {
-    "pack": "ncc build index.js -m"
+    "build": "ncc build index.js -m",
+    "deploy": "yarn build && yarn pack"
   },
   "dependencies": {
     "@actions/core": "^1.2.7",
