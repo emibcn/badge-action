@@ -1,0 +1,4 @@
+.github
+Dockerfile
+docker-compose.yml
+*.tgz
