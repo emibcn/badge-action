@@ -4,7 +4,10 @@ services:
 
   badge:
     container_name: badge
-    build: .
+    build:
+      context: .
+      args:
+        SLIM: ""
     user: "node"
     working_dir: /home/node/app
     environment:
