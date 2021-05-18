@@ -12,3 +12,9 @@ updates:
     commit-message:
       prefix: "npm"
       include: "scope"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      # Check for updates to GitHub Actions every weekday
+      interval: "daily"
