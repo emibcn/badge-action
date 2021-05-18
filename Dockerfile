@@ -6,6 +6,7 @@ USER root
 
 RUN \
   apt-get update && \
-  apt-get install -y python3 gcc
+  apt-get install -y python3 gcc && \
+  apt-get clean
 
 USER node
