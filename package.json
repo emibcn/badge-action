@@ -1,6 +1,6 @@
 {
   "name": "badge-action",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create a badge using GitHub Actions and GitHub Workflow CPU time (no 3rd parties servers)",
   "main": "index.js",
   "repository": "https://github.com/emibcn/badge-action",
@@ -12,8 +12,7 @@
     "deploy": "yarn build && yarn pack"
   },
   "dependencies": {
-    "@actions/core": "^1.2.7",
-    "gradient-badge": "^1.3.1"
+    "github-badge-action": "^0.0.3"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.22.3"

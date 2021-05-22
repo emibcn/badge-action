@@ -3,7 +3,7 @@
 
 # Badge action
 
-This action generates a SVG badge using GitHub Actions and GitHub Workflow CPU time (no 3rd parties servers). The badge is generated using the NPM package [gradient-badge](https://github.com/bokub/gradient-badge).
+This action generates a SVG badge using GitHub Actions and GitHub Workflow CPU time (no 3rd parties servers). The badge is generated using the NPM package [gradient-badge](https://github.com/bokub/gradient-badge) and [Github Badge Action](https://www.npmjs.com/package/github-badge-action) to read and write the GitHub Actions inputs and outputs.
 
 ## Inputs
 
@@ -83,5 +83,6 @@ And then, [follow the example](https://github.com/emibcn/badge-action/blob/6af28
 ### Commit the changes to same branch
 
 See a [workflow example](https://github.com/emibcn/badge-action/blob/88b8f35d4c9fbd776e921f3eea831d4fdb8d4387/.github/workflows/test.yml).
+Or another [more complex example](https://github.com/emibcn/pywisp/blob/master/.github/workflows/test.yml#L178).
 
 Note: You will need to pull auto-generated commits with this technique, or your repo will mess up.
