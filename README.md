@@ -52,7 +52,7 @@ The badge SVG contents.
 ## Example usage
 
 ```
-uses: emibcn/badge-action@v1
+uses: emibcn/badge-action@v1.2.1
 with:
   label: 'Test coverage'
   status: '53.4%'
