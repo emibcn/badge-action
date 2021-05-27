@@ -12,7 +12,7 @@
     "deploy": "yarn build && yarn pack"
   },
   "dependencies": {
-    "github-badge-action": "^0.0.3"
+    "github-badge-action": "^0.0.4"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.22.3"
