@@ -17,10 +17,10 @@ badgen@^3.2.1:
   resolved "https://registry.yarnpkg.com/badgen/-/badgen-3.2.1.tgz#71d09113a091796e74540d0ca8ebc45f89e0f55a"
   integrity sha512-XibyDQHM/7l809dJBp1GEvPmHY3BLgO164f6DuHyLP0OTHDm9EAmHjN7hEyiGQATEpn4G3EVGH8x+M4UFfhkHw==
 
-github-badge-action@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/github-badge-action/-/github-badge-action-0.0.6.tgz#e2567a6001b3b71350488673c30011c889292d35"
-  integrity sha512-BltZkt9ghHzNiKkMCfUB3BRzDL2P9IaR2zSBEaRNjMd7MzPGQLFYIc06L8gpFK0dwTT3cwzcnOeEun+A6HpHnQ==
+github-badge-action@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/github-badge-action/-/github-badge-action-1.0.0.tgz#5d531aba28bd60a025025b8a600ee1583f16142a"
+  integrity sha512-KQrDbQU4XWohyYd2gh7nzwgb1zv/a2zjtESk/pNxFftZNKsyR+P+rVdfzi3J58QZDgOPP//gtYWdY1rBX37MfQ==
   dependencies:
     "@actions/core" "^1.3.0"
     gradient-badge "^1.3.1"

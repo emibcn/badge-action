@@ -1,3 +1,3 @@
-const createBadgeFromInputs = require('github-badge-action');
+const { createBadgeFromInputs } = require('github-badge-action');
 
 createBadgeFromInputs();
