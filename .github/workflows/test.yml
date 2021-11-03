@@ -30,7 +30,7 @@ jobs:
         BADGE_PATH: ${{ steps.extract_branch.outputs.branch }}/test-badge.svg
         BRANCH: badges
 
-    - uses: actions/checkout@v2.3.5
+    - uses: actions/checkout@v2.4.0
       with:
         ref: ${{ steps.coverage.outputs.branch }}
 
