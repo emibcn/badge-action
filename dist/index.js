@@ -911,6 +911,20 @@ module.exports = (function (e, t) {
         this.message = n;
       }
       toString() {
+        if (this.command == "save-state")
+        {
+          if (this.properties) {
+            let e = "\"" + this.properties + "=" + this.message + "\" >> $GITHUB_STATE"
+            return e;
+          }
+        }
+        if (this.command == "set-output")
+        {
+          if (this.properties) {
+            let e = "\"" + this.properties + "=" + this.message + "\" >> $GITHUB_OUTPUT"
+            return e;
+          }
+        }
         let e = u + this.command;
         if (this.properties && Object.keys(this.properties).length > 0) {
           e += " ";
@@ -1103,7 +1117,7 @@ module.exports = (function (e, t) {
     t.getBooleanInput = getBooleanInput;
     function setOutput(e, t) {
       process.stdout.write(c.EOL);
-      a.issueCommand("set-output", { name: e }, t);
+      a.issueCommand("set-output", e, t);
     }
     t.setOutput = setOutput;
     function setCommandEcho(e) {
@@ -1157,7 +1171,7 @@ module.exports = (function (e, t) {
     }
     t.group = group;
     function saveState(e, t) {
-      a.issueCommand("save-state", { name: e }, t);
+      a.issueCommand("save-state", e, t);
     }
     t.saveState = saveState;
     function getState(e) {
