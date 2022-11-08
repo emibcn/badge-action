@@ -13,18 +13,18 @@ jobs:
     # Get current banch name to use it as dest directory
     - name: Extract branch name
       shell: bash
-      run: echo "branch=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_STATE
+      run: echo "branch=$(echo ${GITHUB_REF#refs/heads/})" >> $GITHUB_OUTPUT
       id: extract_branch
 
     - name: Prepare environment
       id: coverage
       run: |
         # Generates a GitHub Workflow output named `lines` with a coverage value
-        echo "lines=${COVERAGE}" >> $GITHUB_STATE
+        echo "lines=${COVERAGE}" >> $GITHUB_OUTPUT
 
         # Output values to be used by other steps
-        echo "path=${BADGE_PATH}" >> $GITHUB_STATE
-        echo "branch=${BRANCH}" >> $GITHUB_STATE
+        echo "path=${BADGE_PATH}" >> $GITHUB_OUTPUT
+        echo "branch=${BRANCH}" >> $GITHUB_OUTPUT
       env:
         COVERAGE: 53.5%
         BADGE_PATH: ${{ steps.extract_branch.outputs.branch }}/test-badge.svg
