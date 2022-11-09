@@ -1,4 +1,4 @@
-![.github/workflows/test.yml](https://github.com/emibcn/badge-action/workflows/.github/workflows/test.yml/badge.svg)
+[![Test](https://github.com/emibcn/badge-action/workflows/.github/workflows/test.yml/badge.svg)](https://github.com/emibcn/badge-action/actions/workflows/test.yml)
 ![.github/workflows/test.yml](https://raw.githubusercontent.com/emibcn/badge-action/badges/master/test-badge.svg)
 [![DeepSource](https://deepsource.io/gh/emibcn/badge-action.svg/?label=active+issues&show_trend=true&token=q5_59ceYB1F8e9JRV7HuHuFh)](https://deepsource.io/gh/emibcn/badge-action/?ref=repository-badge)
 
