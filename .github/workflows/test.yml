@@ -1,8 +1,4 @@
-on:
-  push:
-    branches:
-    - '*'
-    - '!badges'
+on: [push]
 
 jobs:
   test:
