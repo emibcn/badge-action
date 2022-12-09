@@ -2,3 +2,5 @@
 Dockerfile
 docker-compose.yml
 *.tgz
+.deepsource.toml
+badge-action.modern.mjs.map
