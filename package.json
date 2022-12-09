@@ -1,6 +1,6 @@
 {
   "name": "badge-action",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Create a badge using GitHub Actions and GitHub Workflow CPU time (no 3rd parties servers)",
   "source": "index.js",
   "main": "dist/badge-action.modern.js",

@@ -42,7 +42,7 @@ jobs:
 
     # Use the output from the `coverage` step
     - name: Generate the badge SVG image
-      uses: emibcn/badge-action@v2.0.1
+      uses: emibcn/badge-action@v2.0.2
       id: badge
       with:
         label: 'Test coverage'
