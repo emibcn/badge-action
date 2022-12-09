@@ -1,5 +1,3 @@
-'use strict'
-
-const { createBadgeFromInputs } = require('github-badge-action')
+import { createBadgeFromInputs } from 'github-badge-action'
 
 createBadgeFromInputs()
