@@ -79,11 +79,11 @@ git commit -m 'Add dedicated README'
 git push origin badges
 ```
 
-And then, [follow the example](https://github.com/emibcn/badge-action/blob/6af286f6b6e5dcabe6fd7085e852e5e6ac7713a0/.github/workflows/test.yml).
+And then, [follow the example](https://github.com/emibcn/badge-action/blob/master/.github/workflows/test.yml#L44).
 
 ### Commit the changes to same branch
 
-See a [workflow example](https://github.com/emibcn/badge-action/blob/88b8f35d4c9fbd776e921f3eea831d4fdb8d4387/.github/workflows/test.yml).
+See a [workflow example](https://github.com/emibcn/badge-action/blob/master/.github/workflows/test.yml#L60).
 Or another [more complex example](https://github.com/emibcn/pywisp/blob/master/.github/workflows/test.yml#L178).
 
 Note: You will need to pull auto-generated commits with this technique, or your repo will mess up.
