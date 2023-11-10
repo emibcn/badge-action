@@ -1,3 +1,3 @@
-import { createBadgeFromInputs } from "github-badge-action";
+import { createBadgeFromInputs } from 'github-badge-action'
 
-createBadgeFromInputs();
+createBadgeFromInputs()
