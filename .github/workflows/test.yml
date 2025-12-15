@@ -51,7 +51,7 @@ jobs:
         path: ${{ steps.coverage.outputs.path }}
 
     - name: Upload badge as artifact
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v6
       with:
         name: badge
         path: ${{ steps.coverage.outputs.path }}
