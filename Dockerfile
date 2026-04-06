@@ -1,6 +1,6 @@
 ARG SLIM=-slim
 
-FROM node:20$SLIM
+FROM node:24$SLIM
 
 USER root
 
